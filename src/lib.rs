@@ -1,5 +1,7 @@
+use rand::Rng;
+
 pub fn make_robot_move(current_game: &str) -> String {
-    0.to_string()
+    rand::thread_rng().gen_range(0, 3).to_string()
 }
 
 #[cfg(test)]
